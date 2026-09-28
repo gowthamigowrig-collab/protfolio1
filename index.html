@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pillalamarri Gowthami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+        }
+
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #0b132b;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3a86ff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3a86ff;
+        }
+
+        /* Hero / Home Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: #3a86ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #a0aec0;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #3a86ff;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+            box-shadow: 0 0 15px rgba(58, 134, 255, 0.4);
+        }
+
+        /* Section Commons */
+        section {
+            padding: 100px 10% 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .content-card {
+            background-color: #1c2541;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #2a385b;
+        }
+
+        .content-card h3 {
+            color: #3a86ff;
+            margin-bottom: 15px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background-color: #0b132b;
+            color: #3a86ff;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid #3a86ff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 16px;
+            background-color: #1c2541;
+            border: 1px solid #2a385b;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .contact-form input:focus, 
+        .contact-form textarea:focus {
+            border-color: #3a86ff;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 16px;
+            border-radius: 30px;
+        }
+
+        .direct-details {
+            margin-top: 40px;
+            text-align: center;
+            color: #a0aec0;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0b132b;
+            color: #a0aec0;
+            font-size: 14px;
+            border-top: 1px solid #1c2541;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .nav-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Pillalamarri Gowthami</span></h1>
+        <p>I'm an MCA student with a passion for technology and software development.</p>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="content-card">
+            <p>
+                I am an MCA student with a background in Computer Science and a strong interest in the IT industry.
+                I am passionate about learning new technologies, improving my programming skills, and developing practical solutions.
+                I am a quick learner, hardworking, and interested in building my career as a Software Engineer.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h3>Skills</h3>
+            <div class="skills-container">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h3>Education</h3>
+            <p><strong>MCA</strong> - AURORA PG COLLEGE</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="content-card">
+            <h3>Email Spam Detection</h3>
+            <p>Developed using Machine Learning and Flask.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <!-- Updated Form Action with your Formspree URL -->
+            <form class="contact-form" action="https://formspree.io/f/xrpbrgqz" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <div class="direct-details">
+                <p>Email: gowthamigowrig@gmail.com</p>
+                <p>Phone: 9347792171</p>
+                <p>Location: Hyderabad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Pillalamarri Gowthami | Portfolio
+    </footer>
+
+</body>
+</html>
